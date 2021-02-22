@@ -89,4 +89,4 @@ with tf.Graph().as_default():
   sess.run(init)
 
   # Create a SavedModel
-  CreateSavedModel(sess, ["x:0","y:0"], ["prediction:0", "prediction_fcn:0"], sys.argv[1])
+  create_savedmodel(sess, ["x:0","y:0"], ["prediction:0", "prediction_fcn:0"], sys.argv[1])
